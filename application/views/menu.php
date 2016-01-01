@@ -39,8 +39,8 @@ $masuk=$this->create_model->log();
     $query1 = $this->db->get('artikel');
     $hasilartikel = $query1->result_array();
     ?>
-<nav class="navigation-bar bg-blue">
-    <div class="navigation-bar-content">
+<nav class="navigation-bar">
+    <div class="navigation-bar-content  bg-green">
     <a style="width:18%;" class="element" href="<?php echo base_url();?>home.an"><i class="icon-clipboard-2"></i> Task Manager</a>
     <div class="element input-element"style="width:24%;">
         <form method="POST" style="width:100%;"action="<?php echo base_url();?>searc.an">
