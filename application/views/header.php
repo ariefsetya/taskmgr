@@ -24,7 +24,7 @@ mysql_query("set names 'utf8'");
     <link href="<?php echo base_url();?>assets/css/mine.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url();?>assets/favicon.ico">
 
-    <title>KlikJakarta</title>
+    <title>Task Manager</title>
     <style type="text/css">
     label{
         font-size: 12pt;
