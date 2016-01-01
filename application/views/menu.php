@@ -40,24 +40,24 @@ $masuk=$this->create_model->log();
     $hasilartikel = $query1->result_array();
     ?>
 <nav class="navigation-bar">
-    <div class="navigation-bar-content  bg-green">
-    <a style="width:18%;" class="element" href="<?php echo base_url();?>home.an"><i class="icon-clipboard-2"></i> Task Manager</a>
-    <div class="element input-element"style="width:24%;">
+    <div class="navigation-bar-content bg-green">
+    <a style="width:18%;" class="element bg-green" href="<?php echo base_url();?>home.an"><i class="icon-clipboard-2"></i> Task Manager</a>
+    <!--div class="element input-element"style="width:24%;">
         <form method="POST" style="width:100%;"action="<?php echo base_url();?>searc.an">
             <div class="input-control text" style="width:100%;">
                 <input style="font-family:Segoe UI Light;font-size:10pt !important;" type="text" name="cari" placeholder="Search...">
                 <button class="btn-search"></button>
             </div>
         </form>
-    </div>
-    <a class="element" href="<?php echo base_url();?>notes.an"><i class="icon-book"></i> Notes</a>
-    <a class="element" href="<?php echo base_url();?>files.an"><i class="icon-folder-2"></i> Files</a>
-    <a class="element" href="<?php echo base_url();?>dolist.an"><i class="icon-list"></i> To Do List</a>
+    </div-->
+    <a class="element bg-green" href="<?php echo base_url();?>notes.an"><i class="icon-book"></i> Notes</a>
+    <a class="element bg-green" href="<?php echo base_url();?>files.an"><i class="icon-folder-2"></i> Files</a>
+    <a class="element bg-green" href="<?php echo base_url();?>dolist.an"><i class="icon-list"></i> To Do List</a>
     <?php if($masuk==FALSE){
     ?>
     <div class="place-right">
-        <a class="element" href="<?php echo base_url();?>login.an"><i class="icon-enter"></i> Sign In</a>
-        <a class="element" href="<?php echo base_url();?>join.an"><i class="icon-plus"></i> Join</a>
+        <a class="element bg-green" href="<?php echo base_url();?>login.an"><i class="icon-enter"></i> Sign In</a>
+        <a class="element bg-green" href="<?php echo base_url();?>join.an"><i class="icon-plus"></i> Join</a>
     </div>
     <?php
     } 
@@ -69,15 +69,15 @@ $masuk=$this->create_model->log();
         if($this->session->userdata('status')=="admin"){
             ?>
 
-    <a class="element" href="<?php echo base_url();?>panel/enc/<?php echo $enc;?>.an"><i class="icon-folder-2"></i> Admin</a>
+    <a class="element bg-green" href="<?php echo base_url();?>panel/enc/<?php echo $enc;?>.an"><i class="icon-folder-2"></i> Admin</a>
             <?php
         }
         ?>
 
     <div class="place-right">
-        <a href="<?php echo base_url().$this->uri->segment(1);?>.an" class="element"><i class="icon-spin"></i></a>
+        <a href="<?php echo base_url().$this->uri->segment(1);?>.an" class="element bg-green"><i class="icon-spin"></i></a>
         
-        <div class="element">
+        <div class="element bg-green">
             <a class="dropdown-toggle" href="#">
                 <span class="icon-calendar"> <span style="font-family:Segoe UI Light;"></span></span>
             </a>
@@ -119,12 +119,12 @@ $masuk=$this->create_model->log();
                 <li><a href="<?php echo base_url();?>calendar.an"><i class="icon-calendar"></i> Calendar</a></li>
             </ul>
         </div>
-        <a href="<?php echo base_url();?>/profile/<?php echo $this->session->userdata('id');?>.an" class="element image-button image-left">
+        <a href="<?php echo base_url();?>/profile/<?php echo $this->session->userdata('id');?>.an" class="element bg-green image-button image-left">
             <?php echo $this->session->userdata('email');?>
             <img src="<?php echo $hasil['pp'];?>"/>
         </a>
 
-        <div class="element">
+        <div class="element bg-green">
             <a class="dropdown-toggle" href="#">
                 <span class="icon-cog"> <span style="font-family:Segoe UI Light;"></span></span>
             </a>
